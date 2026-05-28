@@ -1,7 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "Hydropower MRV Policy Schema",
-  "description": "Guardian-compatible policy schema for small-scale hydropower MRV based on Verra VM0040",
+  "description": "Guardian-compatible policy schema for small-scale hydropower MRV based on Verra ACM0002",
   "version": "1.0.0",
   "type": "object",
   "properties": {
@@ -10,11 +10,11 @@
       "properties": {
         "name": {
           "type": "string",
-          "const": "Hydropower MRV Policy (VM0040)"
+          "const": "Hydropower MRV Policy (ACM0002)"
         },
         "description": {
           "type": "string",
-          "const": "Guardian implementation of Verra VM0040 for small-scale hydropower with DID-based verification"
+          "const": "Guardian implementation of Verra ACM0002 for small-scale hydropower with DID-based verification"
         },
         "topicDescription": {
           "type": "string",
@@ -97,7 +97,7 @@
         },
         "gatewayDID": {
           "type": "string",
-          "pattern": "^did:hedera:testnet:[a-zA-Z0-9._-]+$",
+          "pattern": "^did:hedera:(testnet|mainnet):[a-zA-Z0-9._-]+$",
           "description": "Hedera DID of the gateway device"
         },
         "signature": {

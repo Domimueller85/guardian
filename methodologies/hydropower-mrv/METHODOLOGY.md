@@ -24,12 +24,12 @@ Projects demonstrate additionality through:
 | pH Level | pH | Hourly | pH sensor |
 | Turbidity | NTU | Hourly | Nephelometer |
 ## Verification Logic
-\\\
+```
 IF (device_DID_verified AND 
     telemetry_signed AND 
     energy_output > baseline_minimum)
 THEN issue_REC(energy_output_MWh)
-\\\
+```
 ## Emission Reductions
 **Formula:** ER = Electricity Generated × (Grid EF - Project EF)  
 Where Project EF = 0 (renewable source)
