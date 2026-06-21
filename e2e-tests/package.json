@@ -20,7 +20,7 @@
     "devDependencies": {
         "@cypress/grep": "^4.1.0",
         "cy-verify-downloads": "^0.1.14",
-        "cypress": "^14.5.1",
+        "cypress": "^15.17.0",
         "cypress-mochawesome-reporter": "^3.5.1",
         "node-fetch": "^2.7.0"
     },
